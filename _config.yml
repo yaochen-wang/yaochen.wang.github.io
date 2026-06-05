@@ -26,8 +26,8 @@ author:
   name             : "Yaochen Wang"
   pronouns         : # example: "she/her"  
   bio              : "To be ambitious, and yet not be arrogant."
-  location         : "Nanjing, China"
-  # employer         : "Red Brick University"
+  location         : "Abu Dhabi, UAE"
+  employer         : "MBZUAI"
   uri              : # URL
   email            : "misakiwang74@gmail.com" 
 
@@ -45,7 +45,7 @@ author:
   # bitbucket        : # Username - Update with your username on the site
   # codepen          : # Username
   # dribbble         : # Username
-  github           : "https://github.com/yaochen-wang"
+  github           : "yaochen-wang"
   # kaggle           : # Username  
   # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -80,7 +80,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Preprints'    
   conferences:
     title: 'Conference Papers'
 
