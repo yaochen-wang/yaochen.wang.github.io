@@ -1,0 +1,26 @@
+{% assign papers = site.publications | sort: "date" | reverse %}
+
+<div class="publication-list" style="display: grid; gap: 1rem; margin-top: 1rem;">
+  {% for paper in papers %}
+    <article style="padding-bottom: 1rem; border-bottom: 1px solid #e8e8e8;">
+      <p style="margin: 0 0 0.25rem; font-size: 1.03rem; font-weight: 700; line-height: 1.35;">
+        {{ paper.title }}
+      </p>
+      {% if paper.authors %}
+        <p style="margin: 0 0 0.3rem; color: #444; line-height: 1.45;">
+          {{ paper.authors }}
+        </p>
+      {% endif %}
+      <p style="margin: 0 0 0.35rem; color: #666; line-height: 1.4;">
+        {{ paper.date | date: "%Y.%m" }} &middot; {{ paper.venue }}
+      </p>
+      {% if paper.links %}
+        <p style="margin: 0;">
+          {% for link in paper.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}&nbsp;&nbsp;{% endunless %}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
